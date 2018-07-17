@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Build C++') {
           steps {
-            build 'Build Control Pipeline'
+            build 'angularDependencyManagement'
           }
         }
       }
