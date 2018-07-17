@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('Build WebApp') {
+    stage('Build Control Pipeline') {
       parallel {
         stage('Build WebApp') {
           steps {
