@@ -15,5 +15,10 @@ pipeline {
         }
       }
     }
+    stage('Build Smart App') {
+      steps {
+        echo 'Hello Smart App Build Stage'
+      }
+    }
   }
 }
