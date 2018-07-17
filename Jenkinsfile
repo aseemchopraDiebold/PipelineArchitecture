@@ -20,5 +20,10 @@ pipeline {
         echo 'Hello Smart App Build Stage'
       }
     }
+    stage('Test Control Pipeline') {
+      steps {
+        build 'Test Control Pipeline'
+      }
+    }
   }
 }
