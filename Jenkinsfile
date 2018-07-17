@@ -8,7 +8,7 @@ pipeline {
             build 'Build Control Pipeline'
           }
         }
-        stage('Build C++ Customization') {
+        stage('Build Native Extension') {
           steps {
             build 'angularDependencyManagement'
           }
