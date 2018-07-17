@@ -1,14 +1,14 @@
 pipeline {
   agent any
   stages {
-    stage('Build Control Pipeline') {
+    stage('Build Control') {
       parallel {
         stage('Build WebApp') {
           steps {
             build 'Build Control Pipeline'
           }
         }
-        stage('Build C++') {
+        stage('Build Vista') {
           steps {
             build 'angularDependencyManagement'
           }
