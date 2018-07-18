@@ -1,26 +1,26 @@
 pipeline {
   agent any
   stages {
-    stage('Build Vista') {
+    stage('Citi-Global-Terminal-App') {
       parallel {
-        stage('Build WebApp') {
+        stage('Build: Citi-Global-WebApp') {
           steps {
             build 'Build Control Pipeline'
           }
         }
-        stage('Build Native Extension') {
+        stage('Build: Citi-Global-Extension') {
           steps {
             build 'angularDependencyManagement'
           }
         }
       }
     }
-    stage('Build Vista Smart App') {
+    stage('Package: Citi-Global-SmartATM') {
       steps {
         echo 'Hello Smart App Build Stage'
       }
     }
-    stage('Test Terminal App') {
+    stage('Test: Citi-Global-Terminal-App') {
       steps {
         build 'Test Control Pipeline'
       }
