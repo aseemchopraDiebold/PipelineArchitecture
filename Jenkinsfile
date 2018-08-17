@@ -18,6 +18,7 @@ pipeline {
     stage('Package: Citi-Global-SmartATM') {
       steps {
         echo 'Hello Smart App Build Stage'
+        currentBuild.result = "FAILURE"
       }
     }
     stage('Test: Citi-Global-Terminal-App') {
